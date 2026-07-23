@@ -1,0 +1,159 @@
+pxlc 1
+
+asset night-orderly-sheet
+canvas 96 48
+
+palette ward max 12 {
+  transparent clear "."
+  color void "V" #090a10
+  color outline "K" #14131d
+  color coat-dark "D" #252432
+  color coat "C" #3b3b48
+  color cloth "L" #62656a
+  color skin "S" #9a8d79
+  color mask "M" #c5c2a6
+  color lens "E" #75c9b8
+  color warning "R" #bd4254
+  color steel "T" #718187
+}
+
+background ward clear
+
+layer shadows using ward {
+  hspan 8 45 17 void
+  hspan 5 46 23 void
+  hspan 40 45 17 void
+  hspan 37 46 23 void
+  hspan 72 45 18 void
+  hspan 69 46 24 void
+}
+
+layer idle using ward {
+  rect 11 2 10 2 outline
+  rect 8 4 16 4 outline
+  rect 7 8 18 8 outline
+  rect 9 16 14 4 outline
+  rect 7 20 18 17 outline
+  rect 5 23 4 12 outline
+  rect 23 23 4 12 outline
+  rect 8 37 7 8 outline
+  rect 17 37 7 8 outline
+
+  rect 10 5 12 3 coat-dark
+  rect 9 8 14 7 coat-dark
+  hspan 9 10 14 mask
+  hspan 10 11 12 mask
+  hspan 11 12 10 mask
+  hspan 12 13 8 mask
+  pixel 11 14 skin
+  pixel 20 14 skin
+  rect 10 16 12 3 cloth
+  rect 9 21 14 15 coat-dark
+  rect 6 24 2 10 coat-dark
+  rect 24 24 2 10 coat-dark
+  rect 9 37 5 7 coat-dark
+  rect 18 37 5 7 coat-dark
+  rect 11 10 3 2 outline
+  rect 18 10 3 2 outline
+  pixel 12 10 lens
+  pixel 19 10 lens
+  hspan 14 13 4 outline
+  vspan 15 21 15 coat
+  vspan 16 21 15 coat
+  hspan 10 35 12 cloth
+  pixel 21 27 warning
+  rect 4 33 4 3 mask
+  rect 24 33 4 3 mask
+  hspan 8 44 7 void
+  hspan 17 44 7 void
+  vspan 27 17 22 steel
+  vspan 28 17 22 outline
+  hspan 26 17 4 outline
+  pixel 27 18 warning
+  hspan 25 38 5 outline
+}
+
+layer listen using ward {
+  rect 43 3 10 2 outline
+  rect 40 5 16 4 outline
+  rect 39 9 18 8 outline
+  rect 41 17 14 4 outline
+  rect 39 21 18 16 outline
+  rect 37 24 4 12 outline
+  rect 55 22 4 13 outline
+  rect 40 37 7 8 outline
+  rect 49 37 7 8 outline
+
+  rect 42 6 12 3 coat-dark
+  rect 41 9 14 7 coat-dark
+  hspan 41 11 14 mask
+  hspan 42 12 12 mask
+  hspan 43 13 10 mask
+  hspan 44 14 8 mask
+  rect 42 17 12 3 cloth
+  rect 41 22 14 14 coat-dark
+  rect 38 25 2 10 coat-dark
+  rect 56 23 2 11 coat-dark
+  rect 41 37 5 7 coat-dark
+  rect 50 37 5 7 coat-dark
+  rect 43 11 3 2 outline
+  rect 50 11 3 2 outline
+  hspan 44 15 4 outline
+  vspan 47 22 14 coat
+  vspan 48 22 14 coat
+  pixel 53 28 warning
+  rect 36 34 4 3 mask
+  rect 56 19 3 5 mask
+  hspan 40 44 7 void
+  hspan 49 44 7 void
+
+  hspan 43 11 3 lens
+  hspan 50 11 3 warning
+  vspan 60 9 30 steel
+  vspan 61 9 30 outline
+  hspan 58 9 4 outline
+  hspan 58 38 5 outline
+}
+
+layer recoil using ward {
+  rect 75 5 10 2 outline
+  rect 72 7 16 4 outline
+  rect 71 11 18 8 outline
+  rect 73 19 14 4 outline
+  rect 71 23 18 14 outline
+  rect 67 19 5 16 outline
+  rect 89 17 5 16 outline
+  rect 72 37 7 8 outline
+  rect 81 37 7 8 outline
+
+  rect 74 8 12 3 coat-dark
+  rect 73 11 14 7 coat-dark
+  hspan 73 13 14 mask
+  hspan 74 14 12 mask
+  hspan 75 15 10 mask
+  hspan 76 16 8 mask
+  rect 74 19 12 3 cloth
+  rect 73 24 14 12 coat-dark
+  rect 68 20 3 14 coat-dark
+  rect 90 18 3 14 coat-dark
+  rect 73 37 5 7 coat-dark
+  rect 82 37 5 7 coat-dark
+  rect 75 13 3 2 outline
+  rect 82 13 3 2 outline
+  pixel 76 13 warning
+  pixel 83 13 warning
+  hspan 78 17 4 outline
+  vspan 79 24 12 coat
+  vspan 80 24 12 coat
+  pixel 85 29 warning
+  rect 66 17 5 4 mask
+  rect 90 14 5 4 mask
+  hspan 72 44 7 void
+  hspan 81 44 7 void
+
+  hspan 62 13 5 outline
+  vspan 62 13 27 steel
+  vspan 63 13 27 outline
+  hspan 61 39 5 outline
+  pixel 62 14 warning
+}

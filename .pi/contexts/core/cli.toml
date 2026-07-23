@@ -1,0 +1,3 @@
+[command-boundary]
+description = "PXLC command entry point, check/build/preview behavior, option parsing, input-tree discovery, diagnostics, and process exit statuses."
+files = ["cmd/pxlc/main.go", "internal/cli/cli.go", "internal/cli/cli_test.go", "internal/cli/input.go"]

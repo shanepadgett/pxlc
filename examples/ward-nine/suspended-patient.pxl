@@ -1,0 +1,108 @@
+pxlc 1
+
+asset suspended-patient
+canvas 48 64
+
+palette ward max 12 {
+  transparent clear "."
+  color void "V" #090a10
+  color outline "K" #14131d
+  color tissue-dark "D" #342535
+  color tissue "F" #70505d
+  color pallor "P" #a99b91
+  color bone "B" #d0c6ad
+  color fluid-dark "U" #254b50
+  color fluid "C" #4f9c91
+  color glow "G" #8ed6b7
+  color warning "R" #bd4254
+}
+
+background ward clear
+
+layer tubes-behind using ward {
+  vspan 14 0 12 fluid-dark
+  hspan 14 11 7 fluid-dark
+  vspan 20 8 10 fluid-dark
+  vspan 33 0 15 fluid-dark
+  hspan 29 14 5 fluid-dark
+  vspan 29 14 8 fluid-dark
+}
+
+layer growth using ward {
+  vspan 8 18 25 tissue-dark
+  hspan 8 18 9 tissue-dark
+  hspan 8 25 6 tissue-dark
+  hspan 4 33 8 tissue-dark
+  vspan 39 11 33 tissue-dark
+  hspan 34 21 6 tissue-dark
+  hspan 39 31 6 tissue-dark
+  hspan 39 43 5 tissue-dark
+  pixel 6 32 tissue
+  pixel 4 34 warning
+  pixel 43 31 tissue
+}
+
+layer body using ward {
+  rect 18 6 12 3 outline
+  rect 15 9 18 13 outline
+  rect 17 22 14 19 outline
+  rect 12 24 5 20 outline
+  rect 31 24 5 20 outline
+  rect 18 41 6 18 outline
+  rect 25 41 6 18 outline
+
+  rect 19 7 10 2 pallor
+  rect 17 10 14 10 pallor
+  hspan 18 20 12 tissue
+  rect 19 23 10 17 tissue-dark
+  rect 13 25 3 18 tissue
+  rect 32 25 3 18 tissue
+  rect 19 41 4 17 tissue-dark
+  rect 26 41 4 17 tissue-dark
+
+  rect 18 12 4 3 outline
+  rect 26 12 4 3 outline
+  pixel 20 13 glow
+  pixel 27 13 warning
+  pixel 28 13 warning
+  vspan 23 15 5 outline
+  vspan 24 15 5 outline
+  hspan 20 20 4 outline
+  hspan 25 19 3 outline
+  pixel 24 17 bone
+
+  vspan 21 25 13 tissue
+  vspan 27 25 13 tissue
+  hspan 20 31 9 pallor
+  pixel 24 31 warning
+  pixel 24 32 warning
+  pixel 23 33 warning
+  pixel 25 33 warning
+  hspan 26 35 4 tissue
+  pixel 29 36 pallor
+
+  hspan 11 43 7 outline
+  hspan 30 43 7 outline
+  hspan 17 59 7 outline
+  hspan 25 59 7 outline
+}
+
+layer restraints using ward {
+  hspan 11 27 26 bone
+  hspan 12 28 24 outline
+  hspan 16 46 17 bone
+  hspan 17 47 15 outline
+  pixel 14 27 warning
+  pixel 33 27 warning
+  pixel 20 46 warning
+  pixel 28 46 warning
+}
+
+layer drips using ward {
+  pixel 12 47 fluid
+  pixel 12 49 fluid
+  pixel 35 46 fluid
+  pixel 35 47 glow
+  pixel 20 61 fluid
+  pixel 29 62 fluid
+}

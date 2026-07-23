@@ -1,0 +1,60 @@
+pxlc 1
+
+asset instrument-cart
+canvas 48 40
+
+palette ward max 10 {
+  transparent clear "."
+  color void "V" #090a10
+  color outline "K" #14131d
+  color steel-dark "D" #30343e
+  color steel "T" #66747a
+  color glass "G" #6ca79d
+  color glow "L" #9bc7ad
+  color warning "R" #bd4254
+  color rust "U" #77404a
+}
+
+background ward clear
+
+layer cart using ward {
+  rect 4 8 40 4 outline
+  rect 6 12 36 15 outline
+  rect 7 13 34 13 steel-dark
+  hspan 8 14 32 steel
+  hspan 7 26 35 outline
+  vspan 8 27 8 outline
+  vspan 39 27 8 outline
+  rect 5 34 7 4 outline
+  rect 36 34 7 4 outline
+  hspan 6 35 5 steel
+  hspan 37 35 5 steel
+}
+
+layer instruments using ward {
+  rect 8 3 8 5 outline
+  rect 9 4 6 4 glass
+  pixel 10 5 glow
+  pixel 14 7 warning
+
+  rect 20 1 5 7 outline
+  rect 21 2 3 5 rust
+  pixel 22 2 warning
+
+  rect 29 4 11 4 outline
+  hspan 30 5 9 steel
+  pixel 37 5 glow
+
+  rect 10 17 7 7 outline
+  rect 11 18 5 5 glass
+  hspan 12 20 3 glow
+  rect 21 17 2 7 rust
+  rect 27 17 10 2 steel
+  rect 35 19 2 5 outline
+}
+
+layer cable using ward {
+  vspan 43 10 11 steel
+  hspan 40 20 4 steel
+  pixel 40 21 warning
+}

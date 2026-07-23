@@ -1,0 +1,3 @@
+[still-image-raster]
+description = "Validated still-image raster execution, binary-alpha layer compositing, and integer nearest-neighbor preview scaling."
+files = ["internal/raster/raster.go", "internal/raster/preview.go"]

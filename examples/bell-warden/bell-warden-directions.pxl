@@ -1,0 +1,134 @@
+pxlc 1
+
+asset bell-warden-directions
+canvas 64 64
+
+palette warden max 10 {
+  transparent clear "."
+  color ink "I" #121116
+  color metal-dark "M" #302a31
+  color metal "N" #57474b
+  color metal-light "L" #78646a
+  color face "F" #baa48e
+  color cloak "C" #3d3342
+  color cloak-light "H" #584756
+  color cord "R" #783936
+  color boot "B" #4b352e
+}
+
+background warden clear
+
+layer directions using warden {
+  grid 6 3 {
+    ".......IIIIII......."
+    ".....IIMMMMMMII....."
+    "....IMMMNNNNMMMI...."
+    "....IMNNNNNNNMMI...."
+    "....IMNNFFFFNNMI...."
+    "....IMNFIFFIFNMI...."
+    "....IMNNFFFFNNMI...."
+    "....IIMMMMMMMMII...."
+    "....IIRRRRRRRRII...."
+    "....IICCCCCCCCII...."
+    "....ICCHCRCCCCCI...."
+    "....ICCCCRRCCCCI...."
+    "...ICCHCCCCCCCCI...."
+    "....ICCHCCCCCCCI...."
+    "....ICCCCHCCCCCI...."
+    "...IHCCCCCCCCCHI...."
+    "...IHHCCCCCCCCHHI..."
+    "..IHCCCCCCCCCCCHI..."
+    "...IHHCCCCCCCCHHI..."
+    "....IICCCCCCCCII...."
+    "....ICCCI..ICCCI...."
+    "....ICCI....ICCI...."
+    "....ICCI....ICCI...."
+    "....IBBI....IBBI...."
+    "....IBBBI..IBBBI...."
+    "....IIII....IIII...."
+  }
+  grid 38 3 {
+    ".......IIIIII......."
+    "......IIMMMMMII....."
+    ".....IMMMMMMMMI....."
+    "....IMMMMMNNMMI....."
+    "....IMMMMMFFNMI....."
+    "....IMMMMMIFNMI....."
+    "....IMMMMMFFNMI....."
+    "....IIMMMMMMMMII...."
+    "......IRRRRRRI......"
+    ".....ICCCCRRI......."
+    "....ICCCCCRCCI......"
+    "...ICCHCCCCCCI......"
+    "...ICCHCCCCCCI......"
+    "..IICCCCCCCCCI......"
+    "..IHCCCCCCCCCII....."
+    "..IHCCCCCCCCCHI....."
+    "..IHCCCCCCCCCHI....."
+    "..IHHCCCCCCCCHHI...."
+    "...IHCCCCCCCCCHI...."
+    "....IICCCCCCCII....."
+    ".....ICCI..ICCI....."
+    ".....ICCI...ICCI...."
+    ".....ICCI...ICCI...."
+    ".....IBBI...IBBI...."
+    "....IBBBI...IBBBI..."
+    "....IIII....IIII...."
+  }
+  grid 6 35 {
+    ".......IIIIII......."
+    ".....IIMMMMMMII....."
+    "....IMMMMMNNMMMI...."
+    "....IMMMMNNNMMMI...."
+    "....IMMMNNLNMMMI...."
+    "....IMMMMMNNMMMI...."
+    "...IMMMMMMMMMMMI...."
+    "....IIMMMMMMMMII...."
+    "....IIRRRRRRRRII...."
+    "....IICCCCCCCCII...."
+    "....ICCCHCCCCCCI...."
+    "...ICCHCCCCCCCCI...."
+    "...ICCHCCCCCCCCI...."
+    "....ICCHCCCCCCCI...."
+    "....ICCCCHCCCCCI...."
+    "...IHCCCCCCCCCHI...."
+    "...IHHCCCCCCCCHHI..."
+    "..IHCCCCCCCCCCCHI..."
+    "...IHHCCCCCCCCHHI..."
+    "....IICCCCCCCCII...."
+    "....ICCCI..ICCCI...."
+    "....ICCI....ICCI...."
+    "....ICCI....ICCI...."
+    "....IBBI....IBBI...."
+    "....IBBBI..IBBBI...."
+    "....IIII....IIII...."
+  }
+  grid 38 35 {
+    ".......IIIIII......."
+    ".....IIMMMMMII......"
+    ".....IMMMMMMMMI....."
+    ".....IMMNNMMMMMI...."
+    ".....IMNFFMMMMMI...."
+    ".....IMNFIMMMMMI...."
+    ".....IMNFFMMMMMI...."
+    "....IIMMMMMMMMII...."
+    "......IRRRRRRI......"
+    ".......IRRCCCCI....."
+    "......ICCRCCCCCI...."
+    "......ICCCCCCHCCI..."
+    "......ICCCCCCHCCI..."
+    "......ICCCCCCCCCII.."
+    ".....IICCCCCCCCCHI.."
+    ".....IHCCCCCCCCCHI.."
+    ".....IHCCCCCCCCCHI.."
+    "....IHHCCCCCCCCHHI.."
+    "....IHCCCCCCCCCHI..."
+    ".....IICCCCCCCII...."
+    ".....ICCI..ICCI....."
+    "....ICCI...ICCI....."
+    "....ICCI...ICCI....."
+    "....IBBI...IBBI....."
+    "...IBBBI...IBBBI...."
+    "....IIII....IIII...."
+  }
+}

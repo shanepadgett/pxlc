@@ -1,0 +1,125 @@
+pxlc 1
+
+asset lantern-matron
+canvas 64 96
+
+palette mortuary max 15 {
+  transparent clear "."
+  color ink "I" #0d0d10
+  color outline "K" #17161a
+  color deep "D" #242126
+  color coat-shadow "Q" #302a31
+  color coat "C" #443b42
+  color coat-light "H" #5b4d50
+  color steel-dark "T" #494744
+  color steel "S" #77736b
+  color steel-light "L" #aaa397
+  color linen-dark "A" #81766a
+  color linen "B" #b4a58f
+  color dried-blood "R" #71343a
+  color lamp "G" #a6925f
+  color rust "X" #64463d
+}
+
+background mortuary clear
+
+layer figure using mortuary {
+  grid 0 0 {
+    "................................................................"
+    "................................................................"
+    "............................S...S..............................."
+    "............................HXCCC..............................."
+    "............................CQDQQ..............................."
+    "............................HHXCQ..............................."
+    "...........................XSAHCQQC............................."
+    ".........................XXHAAHHCCQC............................"
+    ".........................XHSAHHHHTCQ............................"
+    ".........................CXHASHHTCDD............................"
+    ".........................DDCXXCQQDDD............................"
+    "..........................DQCQQKDDDQDQC........................."
+    "..........................QQCDCKQQDQ...C........................"
+    "..........................CCHGSDQQDQ...Q........................"
+    "..........................CCSGGCCQDDDQCCC......................."
+    "..........................CCSGGCQQDQD..CCT......................"
+    "..........................QCTGGQQQQQ....KCT....................."
+    "..........................QQQCCQQQDQD...D.C....................."
+    ".........................QCCCCCCCQQDK...Q.C....................."
+    "......................HXCQDCCQCCCQDKK..QQ.Q....................."
+    ".....................HXXCQQDQCCQQQDDK..QD.Q....................."
+    "....................XHAASQQQDQCQQQQKIKDD..Q....................."
+    "....................XALAACQQDDDQQQDKIKDDDDK....................."
+    "...................CXAALSTKQDDDQQDKKKDQQQQD....................."
+    "...................CXSAAHHCDDDQQQDKKQCCCQQQD...................."
+    "...................CCHHHXXXDQRQQDDQQTTHHTCQD...................."
+    "...................CCXXXXXCQRHHQQQCTTTCCTCCQ...................."
+    "....................CCXXXXCRRAAHCCCTCQQQCCHHC..................."
+    "....................CCXXCCCRRSSHHCCCQDDQQHCCC..................."
+    "....................CKDCCQQRRSHHHCCQQDKKDCHCC..................."
+    "....................QIIKDDRRRRHHHHCCQDIIKQCHCQ.................."
+    "....................QKIIKQCRRRRHHHCQQDIIIDCCQD.................."
+    "...................QQKIKDDQQRRRRCCQQKKIIIDQCQDD................."
+    "...................QQKIIDKKDRRRQRRKKKII..KQQQDD................."
+    "..................DQQII.DDDQQQQQQQKKKII...DQCCDD................"
+    "..................DDDII..DDDQQQQRDKKKI....KDCQDD................"
+    "..................DDKII..DCCDDQQRDDQKK.....DQQDDD..............."
+    ".................DQDKI..DDCCRRRQDKQQKK.....DQQCQD..............."
+    ".................QQQKI..DDQQRRRCDDKKKKK....KKQCQDD.............."
+    ".................CCDKI.DQQQQQRRCQCQQQKK.....KQQQDD.............."
+    "................CHQKI..DDQQQDDQQQQCQQDK.....QQCCCDD............."
+    "................XXQK...DQCQDDCCDDKQQDKKK....DQCCQDD............."
+    "...............CHCDK...DRCQQCCCQKDDQQKKK.....DQQCDDD............"
+    "..............CHHQK...DDRRQCRCRQDDQQQDKKK....QCCCQKK............"
+    "..............QXCDK...DDRRCRRCRDDQQQQDKKK....DDCCCDD............"
+    "..............QQDKD...DQRRRRRRRDQQQRCRDKK....DDCQCDD............"
+    "..............CQKKQC..DQRRRRRRQDCCRRCCRKK.....DQQQDKK..........."
+    "..............HCKQC..DDQQRRRRRDQQCRXXXRKKK....KQTCQDK..........."
+    ".............CHCDQ...DDQQRRRRRDQQQRXXXRKKK....DQTCDDK..........."
+    ".............QTQDQ...DDQQRRRRRDQQQRRXXRKKK....DQQQDKK..........."
+    ".............DQQDQ...DDQQRRRRIDQQQRXXXXKKK.....DQCQDK..........."
+    ".............QQQD...DDDQQRQRKIDQQQRRXRRRKKK....DCQQQD..........."
+    "............HCKDK...DDQQQDRQIKKQQQRRRRRRKIK....DCQQDKD.........."
+    "............TDD.....KDQQDDRKKKKQQQQRRRRRKIK....DQQRDKK.........."
+    "...........T........KDQDDRQIDDKQQQQRRRRRDKK....KQCCQDK.........."
+    "..........CQ.......KKDDDRRIIIKKDQQQRRRRRDKKK...DQCCQDD.........."
+    "...................KKDDDRRIIIIIIQQQQRRRDDKKK...DQQRRQD.........."
+    "...................KDDDRRIIIIIIIDCQQRRRDDKKK...QQQQQQDD........."
+    "..................DKDDRRRIIIII.IKCQQRRDKKKKK...KKQQQDKK........."
+    "..................KDDQRRIIIIII..IQCQQQQDKKKKK...KQTTQKK........."
+    "..................KDQQRRIIIII...IQCQQQQDKKKKK...DQCTQD.........."
+    ".................KDQQRRIIIKII....KRQQDDDDKKKK...QXSXCD.........."
+    ".................KDQQRRIIKKII....IQRQDDDDKKKIK..HSLAXQ.........."
+    "................DDQQQRRIIIKII....KDRQQDDDDKKIK..ASAAXC.........."
+    "................DQQQRRIIIIKKII...DDQQQQDKKKKKK..ASLAXC.........."
+    "...............DDQQQQQIIIKKIII...KKQRDDQDKKKKKK.AXALXC.........."
+    "...............DDDQQQIIIIIIIII....KQRDDDDKKKKKKAAXAAXX.........."
+    "..............DDDQQCQIIIKKKKII....KKQQDDDKKKKKCAAAAAXX.........."
+    "..............KKDQCRKIKIKKKKI.....KKQRDDDDKKDDSAX.AAXS.........."
+    "..............KDQQCQKKK.IKKKI.....KKDRDDDDKKDDAH..LAXAS........."
+    "..............KDQQQD.K..KIKKI......DDRQDDDDKDTA...LS.AA........."
+    ".............DKDQQQK.....KKII......DDQQDDDD..HA...AS.AA........."
+    ".............DDDQCQI.....KKI.......DDQQDQDD...A...AA.AA........."
+    ".............DDQQCQ......KKI.......DQQRDDQD...A...AA..A........."
+    "............QDQCQC.......KKI.......KDDRDQ.....S...AA..AA........"
+    ".............DQCCC.......KK.........DDQQQ....AX...AA..AA........"
+    ".............DDCC.......KKI.........DDDD.....H....AA..AS........"
+    "..............D.T.......KKII........KDKK..........A...AS........"
+    ".............Q..........KKII........KDDK.........AA...A........."
+    ".......................DDIIK.........DDK.........AA...A........."
+    "......................DQKIIK.........QQK.........A...SH........."
+    ".....................DQQKKII.........DDK........AS...SX........."
+    "....................QCQDKII..........QQK........AH...H.........."
+    "...................CCQDK.............QQK........S..............."
+    "..................QCQK...............DQK........H..............."
+    ".....................................DCK........X..............."
+    ".....................................QCD........................"
+    ".....................................QCDK......................."
+    ".....................................QCDK......................."
+    ".....................................QCQD......................."
+    ".....................................CTQD......................."
+    ".....................................CXRK......................."
+    ".....................................QTD........................"
+    "......................................QD........................"
+    "................................................................"
+    "................................................................"
+  }
+}

@@ -1,0 +1,48 @@
+pxlc 1
+
+// Original low-slung ruin drone with split optics and a volatile core.
+asset phase_beetle
+canvas 20 16
+
+palette beetle max 7 {
+  transparent clear "."
+  color outline "K" #17152c
+  color shell "M" #474365
+  color shadow "D" #292642
+  color edge "E" #8f83ac
+  color optic "O" #3de2c3
+  color core "C" #f0448a
+}
+
+background beetle clear
+
+layer shell using beetle {
+  grid 2 2 {
+    "......KKKK......"
+    "....KKMMMMKK...."
+    "..KKMMMMMMMMKK.."
+    ".KMMMMMMMMMMMMK."
+    "KMMMKKMMMMKKMMMK"
+    "KMMMMMMMMMMMMMMK"
+    ".KMMMMMMMMMMMMK."
+    "..KMMMMMMMMMMK.."
+    "...KKMMMMMMKK..."
+    "..KK..KMMK..KK.."
+    ".KK....KK....KK."
+    "KK............KK"
+  }
+}
+
+layer machinery using beetle {
+  hspan 6 6 2 optic
+  hspan 12 6 2 optic
+  rect 9 7 2 2 core
+  pixel 9 6 edge
+  pixel 10 9 shadow
+  hspan 6 10 3 shadow
+  hspan 11 10 3 shadow
+  pixel 7 1 optic
+  pixel 6 0 optic
+  pixel 12 1 optic
+  pixel 13 0 optic
+}

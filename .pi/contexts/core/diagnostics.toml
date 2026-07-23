@@ -1,0 +1,3 @@
+[diagnostic-model]
+description = "Structured source positions, spans, severities, stable diagnostic ordering, and rendering shared across compiler phases."
+files = ["internal/diagnostic/diagnostic.go"]

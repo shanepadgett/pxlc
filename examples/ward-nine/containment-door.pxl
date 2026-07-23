@@ -1,0 +1,121 @@
+pxlc 1
+
+asset containment-door
+canvas 96 128
+
+palette ward max 12 {
+  transparent clear "."
+  color void "V" #090a10
+  color outline "K" #14131d
+  color wall-dark "D" #252432
+  color wall "W" #3b3b48
+  color edge "E" #5c5963
+  color fluid-dark "U" #254b50
+  color fluid "C" #4f9c91
+  color glow "G" #8ed6b7
+  color pallor "P" #a99b91
+  color warning "R" #bd4254
+}
+
+background ward clear
+
+layer frame using ward {
+  rect 5 0 86 128 outline
+  rect 10 5 76 123 wall-dark
+  rect 16 11 64 117 outline
+  rect 20 15 56 109 fluid-dark
+  hspan 10 5 76 edge
+  vspan 10 5 123 wall
+  vspan 85 5 123 wall
+  rect 0 20 10 12 outline
+  rect 86 20 10 12 outline
+  rect 0 92 10 12 outline
+  rect 86 92 10 12 outline
+  rect 2 22 8 8 warning
+  rect 86 22 8 8 warning
+  rect 2 94 8 8 warning
+  rect 86 94 8 8 warning
+}
+
+layer glass using ward {
+  rect 23 18 50 103 fluid-dark
+  rect 24 19 48 101 void
+  rect 26 21 44 97 fluid-dark
+  vspan 28 23 93 fluid
+  vspan 29 23 93 fluid-dark
+  vspan 67 23 93 fluid
+  hspan 27 24 42 fluid
+  hspan 27 113 42 fluid
+  pixel 31 28 glow
+  pixel 32 28 glow
+  pixel 64 84 glow
+  pixel 65 85 glow
+  pixel 34 105 fluid
+  pixel 61 44 fluid
+}
+
+layer growth using ward {
+  vspan 31 39 51 wall-dark
+  hspan 31 39 14 wall-dark
+  hspan 25 55 12 wall-dark
+  hspan 31 73 9 wall-dark
+  vspan 65 31 61 wall-dark
+  hspan 56 47 10 wall-dark
+  hspan 65 67 9 wall-dark
+  hspan 65 91 8 wall-dark
+  pixel 26 54 warning
+  pixel 72 67 warning
+}
+
+layer patient using ward {
+  rect 40 31 16 4 outline
+  rect 36 35 24 19 outline
+  rect 39 54 18 30 outline
+  rect 31 56 8 31 outline
+  rect 57 56 8 31 outline
+  rect 39 84 8 28 outline
+  rect 49 84 8 28 outline
+
+  rect 41 33 14 2 pallor
+  rect 39 37 18 15 pallor
+  rect 41 55 14 27 wall
+  rect 33 58 5 27 pallor
+  rect 58 58 5 27 pallor
+  rect 41 84 5 26 wall-dark
+  rect 50 84 5 26 wall-dark
+
+  rect 40 41 5 3 outline
+  rect 51 41 5 3 outline
+  pixel 42 42 glow
+  pixel 53 42 warning
+  pixel 54 42 warning
+  vspan 47 45 6 outline
+  hspan 42 52 5 outline
+  hspan 49 51 5 outline
+  hspan 31 67 34 edge
+  hspan 32 68 32 outline
+  pixel 48 64 warning
+  pixel 47 65 warning
+  pixel 49 65 warning
+  hspan 50 72 7 pallor
+  pixel 56 73 warning
+}
+
+layer hardware using ward {
+  rect 73 47 14 24 outline
+  rect 75 49 10 20 wall
+  hspan 77 52 6 glow
+  hspan 77 55 3 warning
+  hspan 77 59 6 edge
+  hspan 77 62 4 edge
+  rect 8 54 10 16 outline
+  rect 10 56 8 12 wall
+  pixel 12 59 warning
+}
+
+layer glare using ward {
+  vspan 33 27 20 glow
+  pixel 34 27 glow
+  vspan 63 91 13 fluid
+  pixel 62 103 fluid
+}

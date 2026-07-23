@@ -47,3 +47,15 @@ fi
 """
 quiet = true
 
+[tasks.pxlc]
+description = "Run the PXLC CLI; pass command arguments after --"
+run = "go run ./cmd/pxlc"
+
+[tasks."pxlc:crush"]
+description = "Convert an isolated concept image into PXLC grid source"
+run = "go run ./cmd/pxlc-crush"
+
+[tasks."pxlc:crush-sheet"]
+description = "Reduce a generated sprite sheet to fixed logical cells"
+run = "go run ./cmd/pxlc-crush-sheet"
+

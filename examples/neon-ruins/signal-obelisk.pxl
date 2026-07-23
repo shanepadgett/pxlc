@@ -1,0 +1,61 @@
+pxlc 1
+
+// A chipped ruin marker carrying a cyan navigation glyph.
+asset signal_obelisk
+canvas 16 24
+
+palette ruin max 7 {
+  transparent clear "."
+  color outline "K" #19172f
+  color stone "M" #554f73
+  color shadow "D" #332f51
+  color edge "E" #8c82aa
+  color signal "S" #38dfc0
+  color fault "F" #ef3d87
+}
+
+background ruin clear
+
+layer monument using ruin {
+  grid 2 2 {
+    ".....KK....."
+    "....KMMK...."
+    "...KMMMKK..."
+    "...KMMMMK..."
+    "..KMMMMMMK.."
+    "..KMMMMMMK.."
+    ".KMMMMMMMMK."
+    ".KMMMMMMMMK."
+    ".KMMMMMMMMK."
+    ".KMMMMMMMMK."
+    ".KMMMMMMMMK."
+    ".KMMMMMMMMK."
+    ".KMMMMMMMMK."
+    ".KMMMMMMMMK."
+    "KMMMMMMMMMMK"
+    "KMMMMMMMMMMK"
+    "KMMMMMMMMMMK"
+    "KKKKKKKKKKKK"
+    ".KKK....KKK."
+    "KKK......KKK"
+  }
+}
+
+layer weathering using ruin {
+  vspan 4 7 4 shadow
+  hspan 4 10 3 shadow
+  vspan 11 5 3 edge
+  pixel 10 8 edge
+  hspan 5 16 4 shadow
+  pixel 4 17 shadow
+  pixel 12 14 fault
+  pixel 13 15 fault
+}
+
+layer glyph using ruin {
+  rect 7 7 2 2 signal
+  vspan 8 9 6 signal
+  hspan 6 11 5 signal
+  pixel 6 10 signal
+  pixel 10 12 signal
+}

@@ -1,0 +1,56 @@
+pxlc 1
+
+// Original masked courier with an asymmetric signal sash and energy staff.
+asset rift_courier
+canvas 20 24
+
+palette courier max 7 {
+  transparent clear "."
+  color outline "K" #17152c
+  color cloak "C" #3d3b63
+  color shadow "S" #292744
+  color visor "V" #43e0c1
+  color flare "F" #ed3f86
+  color pale "L" #c5bde3
+}
+
+background courier clear
+
+layer silhouette using courier {
+  grid 2 1 {
+    "......KK........"
+    "....KKCCKK......"
+    "...KCCCCCCK....."
+    "..KCCCKKCCCK...."
+    "..KCCKLLKCCK...."
+    "..KCCKLLKCCK...."
+    "..KCCCCCCCCK...."
+    "...KKCCCCKK....."
+    "...KSSCCSSK....."
+    "..KSSSCCSSSK...."
+    ".KSSSSCCSSSSK..."
+    ".KSSSSCCSSSSK..."
+    ".KSSSCCCCSSSK..."
+    "..KSSCCCCSSK...."
+    "..KSSCCCCSSK...."
+    "...KSCCCCSK....."
+    "...KSCCCCSK....."
+    "...KSC..CSK....."
+    "..KKSC..CSKK...."
+    "..KKS....SKK...."
+    "..KK......KK...."
+    "..K........K...."
+  }
+}
+
+layer signals using courier {
+  hspan 8 5 2 visor
+  pixel 10 5 pale
+  hspan 12 8 4 flare
+  hspan 14 9 4 flare
+  hspan 16 10 2 flare
+  rect 11 13 2 2 flare
+  vspan 4 11 8 visor
+  hspan 3 12 3 pale
+  pixel 4 10 pale
+}

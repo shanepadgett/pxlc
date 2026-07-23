@@ -1,0 +1,3 @@
+[semantic-compilation]
+description = "PXLC semantic validation, safety limits, name and color resolution, operation lowering, and validated still-asset plans."
+files = ["internal/compile/compile.go", "internal/compile/compile_test.go"]

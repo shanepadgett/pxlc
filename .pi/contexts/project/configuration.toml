@@ -7,7 +7,7 @@ description = "Repository Markdown linting policy and excluded generated or tran
 files = [".markdownlint-cli2.jsonc"]
 
 [task-runner]
-description = "Development tool versions and repeatable repository tasks, including Go validation."
+description = "Development tool versions and repeatable repository tasks, including Go validation and the pxlc-crush-sheet generated-sheet reduction command."
 files = ["mise.toml"]
 
 [go-module]

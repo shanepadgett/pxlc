@@ -1,0 +1,3 @@
+[project-overview]
+description = "PXLC project introduction, implemented still-image compiler scope, build commands, generated-sheet reduction workflow, and roadmap pointer."
+files = ["README.md"]

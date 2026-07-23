@@ -1,0 +1,78 @@
+pxlc 1
+
+asset night-orderly
+canvas 32 48
+
+palette ward max 12 {
+  transparent clear "."
+  color void "V" #090a10
+  color outline "K" #14131d
+  color coat-dark "D" #252432
+  color coat "C" #3b3b48
+  color cloth "L" #62656a
+  color skin "S" #9a8d79
+  color mask "M" #c5c2a6
+  color lens "E" #75c9b8
+  color warning "R" #bd4254
+  color steel "T" #718187
+}
+
+background ward clear
+
+layer shadow using ward {
+  hspan 8 45 17 void
+  hspan 5 46 23 void
+}
+
+layer body using ward {
+  rect 11 2 10 2 outline
+  rect 8 4 16 4 outline
+  rect 7 8 18 8 outline
+  rect 9 16 14 4 outline
+  rect 7 20 18 17 outline
+  rect 5 23 4 12 outline
+  rect 23 23 4 12 outline
+  rect 8 37 7 8 outline
+  rect 17 37 7 8 outline
+
+  rect 10 5 12 3 coat-dark
+  rect 9 8 14 7 coat-dark
+  rect 10 16 12 3 cloth
+  rect 9 21 14 15 coat-dark
+  rect 6 24 2 10 coat-dark
+  rect 24 24 2 10 coat-dark
+  rect 9 37 5 7 coat-dark
+  rect 18 37 5 7 coat-dark
+
+  hspan 9 10 14 mask
+  hspan 10 11 12 mask
+  hspan 11 12 10 mask
+  hspan 12 13 8 mask
+  pixel 11 14 skin
+  pixel 20 14 skin
+  rect 10 31 12 2 coat
+  vspan 15 21 15 coat
+  vspan 16 21 15 coat
+  hspan 10 35 12 cloth
+
+  rect 11 10 3 2 outline
+  rect 18 10 3 2 outline
+  pixel 12 10 lens
+  pixel 19 10 lens
+  hspan 14 13 4 outline
+  pixel 21 27 warning
+  pixel 21 28 warning
+
+  rect 4 33 4 3 mask
+  rect 24 33 4 3 mask
+  hspan 8 44 7 void
+  hspan 17 44 7 void
+}
+
+layer implement using ward {
+  vspan 27 17 22 steel
+  vspan 28 17 22 outline
+  hspan 26 17 4 outline
+  pixel 27 18 warning
+  hspan 25 38 5 outline
+}

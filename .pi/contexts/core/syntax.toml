@@ -1,0 +1,3 @@
+[source-syntax]
+description = "PXLC source lexer, parser, and unvalidated declaration tree for the versioned text language."
+files = ["internal/syntax/lexer.go", "internal/syntax/parser.go", "internal/syntax/syntax.go"]

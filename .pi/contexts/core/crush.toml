@@ -1,0 +1,11 @@
+[profile-conversion]
+description = "Experimental concept-to-PXLC conversion profiles, including the compact sprite profile for 32x32 directional character cells with chroma-key isolation, class-vote downsampling, preserved identity accents, and derived silhouette outlines."
+files = ["internal/crush/crush.go"]
+
+[profile-command]
+description = "The pxlc-crush command for importing isolated PNG or JPEG concepts into canonical PXLC grid source and selecting conversion profiles such as sprite."
+files = ["cmd/pxlc-crush/main.go"]
+
+[sheet-reduction]
+description = "Reusable generated-sheet reduction workflow: pxlc-crush-sheet divides raster sheets into equal square or rectangular logical cells, area-averages source pixels, preserves colors and background, and can emit nearest-neighbor previews."
+files = ["cmd/pxlc-crush-sheet/main.go", "internal/crush/sheet.go"]

@@ -1,0 +1,7 @@
+[specification]
+description = "PXLC source-format 1, still-image semantics, runtime artifact schema, validation limits, diagnostics, and exit-status contract."
+files = ["docs/language.md"]
+
+[worked-example]
+description = "Durable demonstration assets and usage notes under examples/ for the documented PXLC language, CLI workflow, and still-asset compiler capabilities."
+files = ["examples/icon.pxl", "examples/README.md", "examples/bell-warden/bell-warden-directions.pxl", "examples/campfire/campfire-sheet.pxl", "examples/neon-ruins/phase-beetle.pxl", "examples/neon-ruins/rift-courier.pxl", "examples/neon-ruins/signal-obelisk.pxl", "examples/swords/sword-sheet.pxl", "examples/ward-nine/censer-child.pxl", "examples/ward-nine/containment-door.pxl", "examples/ward-nine/instrument-cart.pxl", "examples/ward-nine/lantern-matron.pxl", "examples/ward-nine/night-orderly-sheet.pxl", "examples/ward-nine/night-orderly.pxl", "examples/ward-nine/ossuary-porter.pxl", "examples/ward-nine/suspended-patient.pxl", "examples/ward-nine/ward-nine.pxl"]

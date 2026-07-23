@@ -1,0 +1,3 @@
+[deterministic-output]
+description = "Deterministic PNG and metadata encoding plus staged and atomic artifact replacement for compiler outputs."
+files = ["internal/artifact/artifact.go", "internal/artifact/artifact_test.go", "internal/artifact/write.go"]

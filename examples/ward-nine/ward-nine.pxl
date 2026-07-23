@@ -1,0 +1,357 @@
+pxlc 1
+
+asset ward-nine
+canvas 480 270
+
+palette ward max 16 {
+  transparent clear "."
+  color void "V" #090a10
+  color outline "K" #14131d
+  color wall-dark "D" #252432
+  color wall "W" #3b3b48
+  color edge "E" #5c5963
+  color floor "F" #1b1b27
+  color steel "T" #66747a
+  color fluid-dark "U" #254b50
+  color fluid "C" #4f9c91
+  color glow "G" #8ed6b7
+  color pallor "P" #a99b91
+  color bone "B" #d0c6ad
+  color warning "R" #bd4254
+  color rust "X" #77404a
+}
+
+background ward void
+
+layer room using ward {
+  rect 0 28 480 166 wall-dark
+  rect 0 194 480 76 floor
+  hspan 0 28 480 outline
+  hspan 0 32 480 wall
+  hspan 0 188 480 outline
+  hspan 0 193 480 edge
+
+  rect 0 36 480 4 wall
+  hspan 0 41 480 outline
+  vspan 24 42 146 outline
+  vspan 25 42 146 wall
+  vspan 454 42 146 wall
+  vspan 455 42 146 outline
+  vspan 110 42 146 wall
+  vspan 111 42 146 outline
+  vspan 367 42 146 outline
+  vspan 368 42 146 wall
+
+  rect 29 50 76 68 outline
+  rect 34 55 66 58 void
+  hspan 38 59 58 wall
+  vspan 38 59 50 wall
+  hspan 38 108 58 wall-dark
+  rect 42 63 24 17 fluid-dark
+  rect 69 63 23 17 fluid-dark
+  rect 42 83 50 21 wall-dark
+  hspan 46 87 42 edge
+  hspan 46 92 25 wall
+  hspan 46 97 37 wall
+  pixel 87 92 warning
+
+  rect 376 50 70 76 outline
+  rect 381 55 60 66 wall
+  rect 385 59 52 28 fluid-dark
+  rect 388 62 46 22 void
+  hspan 390 65 26 fluid
+  hspan 390 69 39 glow
+  hspan 390 74 18 fluid
+  hspan 390 78 33 fluid
+  rect 385 92 16 18 wall-dark
+  rect 405 92 14 18 wall-dark
+  rect 423 92 14 18 wall-dark
+  pixel 391 99 warning
+  pixel 410 99 glow
+  pixel 429 99 glow
+  hspan 386 115 50 outline
+
+  rect 7 123 96 4 outline
+  hspan 12 128 86 wall
+  hspan 16 133 78 edge
+  hspan 12 138 86 wall-dark
+  hspan 7 143 96 outline
+  hspan 16 149 45 rust
+  hspan 67 149 27 rust
+  hspan 18 155 74 wall
+  hspan 11 162 88 outline
+
+  rect 375 136 82 52 outline
+  rect 380 141 72 47 wall-dark
+  hspan 384 145 64 wall
+  hspan 384 150 39 edge
+  hspan 384 156 57 wall
+  hspan 384 162 48 wall
+  hspan 384 168 60 wall
+  pixel 444 150 warning
+}
+
+layer pipes using ward {
+  rect 0 11 171 8 outline
+  rect 0 13 171 4 steel
+  rect 154 16 17 8 outline
+  rect 158 20 9 56 outline
+  rect 160 21 5 55 rust
+  rect 158 74 33 7 outline
+  rect 184 75 7 42 outline
+  rect 186 77 3 40 steel
+
+  rect 278 9 202 9 outline
+  rect 280 12 200 4 steel
+  rect 305 16 9 28 outline
+  rect 307 18 5 24 rust
+  rect 307 41 61 8 outline
+  rect 312 43 56 4 steel
+
+  rect 31 19 8 19 outline
+  rect 33 19 4 18 rust
+  rect 76 18 8 20 outline
+  rect 78 18 4 20 steel
+  rect 411 16 8 23 outline
+  rect 413 18 4 21 rust
+
+  pixel 17 20 fluid
+  pixel 17 23 fluid
+  pixel 160 86 fluid
+  pixel 160 89 glow
+  pixel 313 53 fluid
+}
+
+layer containment using ward {
+  rect 184 46 112 145 outline
+  rect 190 51 100 140 wall
+  rect 198 58 84 133 outline
+  rect 204 64 72 127 fluid-dark
+  hspan 190 51 100 edge
+  vspan 190 51 140 wall-dark
+  vspan 289 51 140 wall-dark
+
+  rect 208 68 64 119 void
+  rect 212 72 56 111 fluid-dark
+  vspan 215 75 105 fluid
+  vspan 216 75 105 fluid-dark
+  vspan 264 75 105 fluid
+  hspan 215 76 50 fluid
+  hspan 215 178 50 fluid
+
+  rect 175 71 15 18 outline
+  rect 177 74 13 12 warning
+  rect 290 71 15 18 outline
+  rect 290 74 13 12 warning
+  rect 175 157 15 18 outline
+  rect 177 160 13 12 warning
+  rect 290 157 15 18 outline
+  rect 290 160 13 12 warning
+}
+
+layer growth using ward {
+  vspan 220 88 73 wall-dark
+  hspan 220 88 18 wall-dark
+  hspan 211 107 14 wall-dark
+  hspan 220 133 12 wall-dark
+  hspan 214 159 7 wall-dark
+  vspan 260 80 91 wall-dark
+  hspan 248 101 13 wall-dark
+  hspan 260 127 11 wall-dark
+  hspan 260 158 8 wall-dark
+  pixel 212 106 warning
+  pixel 270 127 warning
+  hspan 217 142 7 rust
+  hspan 260 146 5 rust
+}
+
+layer patient using ward {
+  rect 232 84 16 4 outline
+  rect 228 88 24 19 outline
+  rect 231 107 18 32 outline
+  rect 223 110 8 35 outline
+  rect 249 110 8 35 outline
+  rect 231 139 8 38 outline
+  rect 241 139 8 38 outline
+
+  rect 233 86 14 2 pallor
+  rect 231 90 18 15 pallor
+  rect 233 108 14 29 wall
+  rect 225 112 5 31 pallor
+  rect 250 112 5 31 pallor
+  rect 233 139 5 36 wall-dark
+  rect 243 139 5 36 wall-dark
+
+  rect 232 94 5 3 outline
+  rect 243 94 5 3 outline
+  pixel 234 95 glow
+  pixel 245 95 warning
+  pixel 246 95 warning
+  vspan 239 98 6 outline
+  hspan 234 105 5 outline
+  hspan 241 104 5 outline
+  hspan 223 122 34 edge
+  hspan 224 123 32 outline
+  hspan 228 148 25 bone
+  pixel 240 118 warning
+  pixel 239 119 warning
+  pixel 241 119 warning
+  hspan 244 128 8 pallor
+  pixel 251 129 warning
+
+  pixel 219 83 glow
+  pixel 220 83 glow
+  pixel 260 154 fluid
+  pixel 260 157 glow
+  pixel 224 173 fluid
+}
+
+layer furniture using ward {
+  rect 37 174 113 8 outline
+  rect 42 182 103 20 wall-dark
+  rect 44 184 99 12 steel
+  rect 47 196 9 29 outline
+  rect 131 196 9 29 outline
+  rect 43 222 16 5 outline
+  rect 128 222 16 5 outline
+  hspan 52 170 83 pallor
+  hspan 58 168 71 wall
+  hspan 71 166 47 edge
+  pixel 118 168 warning
+  pixel 120 170 warning
+
+  rect 330 173 83 7 outline
+  rect 334 180 75 29 wall-dark
+  hspan 337 184 69 steel
+  hspan 337 189 69 outline
+  vspan 338 209 24 outline
+  vspan 404 209 24 outline
+  rect 335 230 10 5 outline
+  rect 398 230 10 5 outline
+
+  rect 342 155 14 18 outline
+  rect 345 158 8 15 fluid-dark
+  hspan 346 161 6 glow
+  rect 365 149 7 24 outline
+  rect 366 151 5 20 rust
+  rect 383 160 18 13 outline
+  rect 386 162 12 9 steel
+  pixel 396 163 warning
+}
+
+layer orderly using ward {
+  hspan 140 238 21 void
+  hspan 136 240 29 void
+  rect 145 153 10 2 outline
+  rect 142 155 16 4 outline
+  rect 141 159 18 8 outline
+  rect 143 167 14 4 outline
+  rect 141 171 18 28 outline
+  rect 138 174 4 23 outline
+  rect 158 174 4 23 outline
+  rect 142 199 7 31 outline
+  rect 151 199 7 31 outline
+
+  rect 144 156 12 3 wall-dark
+  rect 143 159 14 7 wall-dark
+  hspan 143 161 14 bone
+  hspan 144 162 12 bone
+  hspan 145 163 10 bone
+  rect 145 167 10 3 edge
+  rect 143 172 14 26 wall-dark
+  rect 139 176 2 19 wall-dark
+  rect 159 176 2 19 wall-dark
+  rect 143 199 5 29 wall-dark
+  rect 152 199 5 29 wall-dark
+
+  rect 145 160 3 2 outline
+  rect 152 160 3 2 outline
+  pixel 146 160 glow
+  pixel 153 160 glow
+  hspan 148 164 4 outline
+  vspan 149 173 24 wall
+  vspan 150 173 24 wall
+  hspan 143 197 14 edge
+  pixel 156 181 warning
+
+  vspan 165 167 43 steel
+  vspan 166 167 43 outline
+  hspan 163 167 5 outline
+  pixel 165 168 warning
+  hspan 162 209 7 outline
+  hspan 141 229 8 void
+  hspan 151 229 8 void
+}
+
+layer floor-detail using ward {
+  hspan 0 203 480 wall-dark
+  hspan 0 204 480 outline
+  hspan 19 229 433 wall-dark
+  hspan 42 251 386 outline
+  hspan 92 216 296 wall-dark
+  vspan 87 195 75 wall-dark
+  vspan 392 195 75 wall-dark
+  vspan 185 195 75 outline
+  vspan 294 195 75 outline
+
+  rect 8 211 47 3 rust
+  rect 421 217 39 2 rust
+  hspan 211 238 58 fluid-dark
+  hspan 217 239 46 fluid
+  hspan 225 240 30 glow
+  pixel 202 212 fluid
+  pixel 203 214 glow
+  pixel 315 231 warning
+  pixel 316 231 warning
+  pixel 317 232 warning
+
+  hspan 23 263 39 edge
+  hspan 67 260 18 wall
+  hspan 330 257 44 wall-dark
+  hspan 401 264 61 edge
+}
+
+layer atmosphere using ward {
+  hspan 217 78 47 glow
+  pixel 219 79 glow
+  pixel 262 79 glow
+  vspan 270 92 31 fluid
+  pixel 269 124 fluid
+  pixel 211 144 fluid
+  pixel 212 145 glow
+
+  pixel 14 47 edge
+  pixel 72 44 edge
+  pixel 103 68 edge
+  pixel 347 61 edge
+  pixel 442 132 edge
+  pixel 470 181 edge
+  pixel 318 124 fluid
+  pixel 319 124 fluid
+  pixel 320 125 glow
+  pixel 101 182 warning
+}
+
+layer foreground using ward {
+  rect 0 0 14 270 outline
+  rect 466 0 14 270 outline
+  rect 0 0 480 8 outline
+  vspan 20 0 76 void
+  vspan 21 0 76 outline
+  hspan 20 75 11 outline
+  vspan 30 75 27 outline
+  hspan 25 101 6 outline
+  pixel 25 102 fluid
+  pixel 25 105 glow
+
+  vspan 438 0 96 void
+  vspan 439 0 96 outline
+  hspan 430 95 10 outline
+  vspan 430 95 29 outline
+  hspan 430 123 8 outline
+  pixel 437 124 warning
+
+  hspan 0 266 480 outline
+  rect 0 249 32 21 outline
+  rect 448 244 32 26 outline
+}

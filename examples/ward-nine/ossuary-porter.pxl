@@ -1,0 +1,125 @@
+pxlc 1
+
+asset ossuary-porter
+canvas 64 96
+
+palette mortuary max 15 {
+  transparent clear "."
+  color ink "I" #0d0d10
+  color outline "K" #17161a
+  color deep "D" #242126
+  color coat-shadow "Q" #302a31
+  color coat "C" #443b42
+  color coat-light "H" #5b4d50
+  color steel-dark "T" #494744
+  color steel "S" #77736b
+  color steel-light "L" #aaa397
+  color linen-dark "A" #81766a
+  color linen "B" #b4a58f
+  color dried-blood "R" #71343a
+  color lamp "G" #a6925f
+  color rust "X" #64463d
+}
+
+background mortuary clear
+
+layer figure using mortuary {
+  grid 0 0 {
+    "................................................................"
+    "................................................................"
+    "............................................HSH................."
+    ".......................................QCCTCXHHDDQ.............."
+    "....................................CCQQQDQDCHHDKDDD............"
+    "...................................CCDDDDDDQQHHDKKDKD..........."
+    "...................................CDDDDQDQQQHHQKKDKK..........."
+    "...................................CDDDQQQQQQCHCDKDDK..........."
+    "...................................QDDDCQQQQQCHHDDDDK..........."
+    "...................................DKDDQCQCQQQHHDKKDKK.........."
+    "..................................QDKDDQCQCQQQCXQKKDKK.........."
+    "..................................QKDDDCCQCCQQCXCDKDDK.........."
+    "..................................QKDDDQCCCCQQQHTDKDDK.........."
+    "..................................KKDQQQCQCCQQQHTDKKDKD........."
+    ".................................QKKKDQQQQQQQQQXTDDKDKD........."
+    ".................................DKKKKKQQQQQQQQTCKDDDDK........."
+    "...............................CQDKKKKKDQKQQQQQQQKIKDDDD........"
+    ".............................THHCQDKKKKDQKQDQQQQQKKIIIIK........"
+    "............................CTHHCQKKIKKDQKDDDDQCQKKKKKI........."
+    "............................CHHTQQDKIIKDDKDQDDQCDKKKDKK........."
+    "...........................QQCHTQDKKIIKKKKDDQQQCDKKKDKK........."
+    "...........................DIIICQQDKIIIKDDQQCCCXQDKDQKK........."
+    "...........................KIIIIQQDKKIIKKKDKDDDQKKKDQKK........."
+    "...........................KQTCDQQQDKKIIKKIIKKQQKIIKDKK........."
+    "..........................KKTAAHQQQDKKIKDKIKDDCCKKIIDII........."
+    "..........................KIIHASCDQDKKKDQIIKKDCQKKKKDII........."
+    "..........................IIIIICQKDDKKDCQDDKKKQQKKKDKIK........."
+    "..........................IIIIIIIIKDIKQCQQQQDKDDKKKDKKK........."
+    ".........................KKIIIIIIIKIKQCQQQTCQDKKKKKDKK.........."
+    ".......................QDKKKIIIIKIIIQQCQQCTTCDDKIKKKKI.........."
+    "......................QQQDKKKIIKKIKQQCCQQCCTCQDKIKKKKI.........."
+    "......................QQQQKKDKKKKDQQQCQQDQCTCCQKIIKKIK.........."
+    "......................QDDQDDDDDDQQQDQQQKDQCCCCQDKIIKIK.........."
+    ".....................DDDDDDQQQQQQQDDQQQIKDQQCCCDKIIKIK.........."
+    ".....................DDDQDDQCCQQQQKQCCQKIKDQCQDKIIIKIK.........."
+    ".....................DKDQCTCQQQCCQKQCCDDIIKDDQQDKIIKIK.........."
+    "....................QKKDCSASXCXHXDKQQQQDKKKDDQQQDKIKKK.........."
+    "....................DKKCHALLAASSCQKQQQQQQQQQDDQQQDIIIK.........."
+    "....................KIDXALLLAAAAHQIIKDDQQCCCQCHHQDIIII.........."
+    "...................DDIQSALLAAAAASCIIKKKKQQCCQXSACDIII..........."
+    "..................QQDDCSALLAAAAASCKKDKIKDQQCQXHATDKII..........."
+    "................QQCCDDXSAALAALAAHCDKDDIIKDDDDCXHCKKII..........."
+    "...............QQCCCDDTHAALAALASHHQDKDKIIKKKDQCCDKKII..........."
+    "..............QCCQQQKKXSSAXAAAASSHCDKKDIIIIKKDQDKKKIK..........."
+    "............QQCCQQDKIDHSAHXAAASSHXCDIIDDIIIIKKDKIIIIK..........."
+    "...........QQQQQDDKKIKCXSAXXHXHSHXCQKIKDKIIIIIIIIIIIK..........."
+    "..........CCTCDKKIIIIIKQQQXXCXXTCQQDKIIKDKIIIIIIIIIIK..........."
+    ".........QCDDCDIKIII.KKDQQQCQQQQQDDDKKKIKKIIIIIIIIIIK..........."
+    ".........QQIKQKII....KKDQQQCQQQDQDDDKKKIIKKIIKKIIKKI............"
+    ".........QQIDQ.......KKDDQQQQDQDDKDKKIIIIIKKIKKIIKKI............"
+    ".........KKDDK.......KDDDQQQDKKKDKKKKIIKKIIKKDKIIKKK............"
+    ".........KIDQ........DDCCCQQQQDDQDDQDDKDDIIIKDKIIKIK............"
+    ".........D..........DDCHXHHHXXCQQQQQDDDDDKIIKKIKKDKI............"
+    "..........CQ........DDQXSSHHHHXCQQDDDDDDDKIIKKKKDDKK............"
+    "..........QD........KQQCHAAHHXHHQDQQQQQDDIIIIKIIKKKK............"
+    ".........QQDD.......KCCXHHHXXHHXCQDQQQQDKIKIIKIIIKIK............"
+    "........QQCQDD......KCXCHHXXHAHXXDDQQQQDKKKIKDKIKII............."
+    ".......DDCHQQDK....KDXXCHAHAAAXHXDDQQQQDKIKKKDKKKKI............."
+    "........DDCDKKI....KQHHXXAAAAHHAXQDDQQQKKIIKDDKKKKK............."
+    "........DQQDDD.....KQHHXXSSASHSAHQQDDDQKKIIKKDKKKKK............."
+    "........DCCCCDD....KCHSSHSSSHHASHCQQDDQKKKIKKKKKKKK............."
+    "........QQQQQDD...DKCHHSHAASHSAHHCDQDDDKKKIKKKIKKK.............."
+    "........QXXXXQ....DKCHHHHASHHSHHHCDDDKDDKKIIKIIKKI.............."
+    "........DXXXXDD...DKCHHSSSHXXSSHHXDDKKDKIIKIKKIKKI.............."
+    "........DQQQQD....KKCXXHSHXXXSSHHHQKIIKKIIKIIKIKKK.............."
+    "........DQQQQD....KKCXXHSXCCXSSHSHTDIKDDKDKKIKIIKK.............."
+    ".......DDDQDDDK...IDCXXHSXCCXSHHSHXDKDDDDKKIIIKIKI.............."
+    "..........QD.....KIDCXXXHHCXHSHHSXHQDDDDDDKKIIKKII.............."
+    ".................KIDCCXXXHXXSHXHHXXDKDDDDDKIIIKKIK.............."
+    ".................IKDCCXTXXXXHHXHXTCKIDDDDDKKKIIKIK.............."
+    "................KIIKQQTXCXXXHXXXTXCKIIQQDDKDKIIKKK.............."
+    "................KIKIQCCXCCXHXXXXXTCKIIDQQDDDIKIKD..............."
+    "................KIKKQQCCCQCXCCCCCCCKIIKKDDDDKKIIKD.............."
+    "................KIIKQCQCQQQXCCCQCCQKIKDKKDDKKIIIKD.............."
+    "................K.KKQQCQQIQCQQCQCQQIIIKDKKKKKIIIKDD............."
+    "..................KDQQQQIIKQQQQQCQQIIIIIKKKDKKIIIDD............."
+    "...................KDDQDIIKQQQQQCQQK.IKKKKQQDDK................."
+    "...................IIIKIIIIDQ.QQCQQ...KKQQQQDKI................."
+    "...................KKKKKIII....Q.QQ...KKDQQQKKI................."
+    "....................KDDDIII.......Q....KKDDDDKKK................"
+    "....................DDDKKI.............KKDDQQDKI................"
+    "...................KDDDKKI..............KDDQQKI................."
+    "...................KQQDKKI..............KKDDDKI................."
+    "..................DDQQDKKKK.............KKDDDKI................."
+    ".................KDQQDKKKKK..............DQDQDKK................"
+    "................QQQQQDKKKIK..............DQDQDKK................"
+    "..............QTXCQDDKIIIIK.............KDQQDKKK................"
+    "..............QTXCQDKIIIIK..............KQCQDKKI................"
+    ".............DDQQDKKKK..................DQCQDDKI................"
+    "..............DQDKKK....................QCCCQKII................"
+    ".......................................QTHHCDKI................."
+    ".......................................DQXCDKKK................."
+    ".......................................DQCQDDK.................."
+    "........................................QQQD...................."
+    "................................................................"
+    "................................................................"
+  }
+}
