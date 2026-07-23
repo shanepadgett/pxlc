@@ -1,8 +1,49 @@
 [tools]
+go = "1.26.5"
+golangci-lint = "2.12.2"
+"go:golang.org/x/vuln/cmd/govulncheck" = "1.6.0"
 python = "3.13"
 "npm:markdownlint-cli2" = "0.22.1"
 
 [tasks."check:md"]
 description = "Markdown checks"
 run = "markdownlint-cli2 --fix"
+
+[tasks."fmt:go"]
+description = "Format Go source"
+run = """
+if [ -n "$(find . -type f -name '*.go' -not -path './vendor/*' -print -quit)" ]; then
+  golangci-lint fmt
+fi
+"""
+quiet = true
+
+[tasks."fix:go"]
+description = "Apply safe Go lint fixes"
+run = """
+if [ -n "$(find . -type f -name '*.go' -not -path './vendor/*' -print -quit)" ]; then
+  golangci-lint fmt
+  golangci-lint run --fix >/dev/null 2>&1 || true
+fi
+"""
+quiet = true
+
+[tasks."check:go"]
+description = "Run deterministic Go validation"
+depends = ["fix:go"]
+run = """
+if [ -n "$(find . -type f -name '*.go' -not -path './vendor/*' -print -quit)" ]; then
+  golangci-lint run
+fi
+"""
+quiet = true
+
+[tasks."audit:go"]
+description = "Check Go dependencies against the vulnerability database"
+run = """
+if [ -n "$(find . -type f -name '*.go' -not -path './vendor/*' -print -quit)" ]; then
+  govulncheck ./...
+fi
+"""
+quiet = true
 

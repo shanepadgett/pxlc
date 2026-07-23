@@ -10,6 +10,18 @@
 					"includeGlobs": [
 						"**/*.md"
 					]
+			},
+			{
+				"name": "go-check",
+				"command": "mise run check:go",
+				"details": "Applies safe Go fixes, then runs concise deterministic lint and dead-code checks.",
+				"includeGlobs": [
+					"**/*.go",
+					"go.mod",
+					"go.sum",
+					".golangci.yml",
+					"mise.toml"
+				]
 				}
 			]
 		}

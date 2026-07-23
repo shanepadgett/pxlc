@@ -218,26 +218,6 @@ Color #7e5244 is outside palette "wasteland_16".
 
 Warnings should be distinguishable from errors and individually suppressible once stable warning codes exist.
 
-## Reliability and Testing
-
-The compiler needs strong automated coverage because a subtle rasterization change can alter every asset in a game.
-
-Required initial tests include:
-
-- Parser and formatter round trips when formatting exists.
-- Golden-image tests for every implemented drawing operation.
-- Golden metadata tests.
-- Determinism across repeated builds.
-- Stable ordering independent of filesystem enumeration.
-- Clipping and boundary behavior.
-- Palette enforcement.
-- Malformed and adversarial source files.
-- Resource-limit enforcement.
-- Failed builds preserving prior valid output.
-- Cross-platform artifact comparison.
-
-Each source-format or rasterization change should state whether it intentionally changes existing output.
-
 ## Initial Demonstration Asset
 
 The first slice should prove itself with a small palette-constrained icon. The demonstration should show source diffs beside generated previews. It should be possible for an agent to alter a palette color without rewriting the whole asset.
@@ -270,7 +250,7 @@ PXLC can validate mechanical rules. Palette checks cannot determine whether a si
 
 ### Phase 0: Lock semantics
 
-Define and test:
+Define:
 
 - Coordinate system.
 - Palette and transparency behavior.
@@ -293,7 +273,6 @@ Implement:
 - Literal grids, pixels, spans, and rectangles.
 - Deterministic PNG output.
 - `check`, `build`, and basic `preview`.
-- Golden rendering tests.
 
 **Gate:** A coding agent can create and revise a palette-constrained still sprite using only text source and CLI output.
 

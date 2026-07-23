@@ -136,7 +136,7 @@ PXLC should support a project-level configuration file for shared policy:
 
 Single-file use should remain possible without a project file.
 
-## Later Demonstration Assets and Tests
+## Later Demonstration Assets
 
 Add demonstrations for:
 
@@ -146,8 +146,6 @@ Add demonstrations for:
 4. A sprite using shared stamps and frame inheritance.
 
 The demonstration should show source diffs beside generated previews. It should be possible for an agent to alter a pose or attachment point without rewriting the whole asset.
-
-Add frame-inheritance and stamp-composition tests, and cycle-detection tests.
 
 ## Delivery Plan: Phases 2–4
 
@@ -162,7 +160,6 @@ Implement:
 - Imports.
 - Origins, points, rectangles, and masks.
 - Project configuration.
-- Resource limits and malformed-input tests.
 
 **Gate:** A composed mechanical asset can be built from reusable parts with valid game metadata.
 

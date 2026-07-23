@@ -1,0 +1,3 @@
+[repository-instructions]
+description = "Governing repository instructions for delegated coding work, including the policy that tests require explicit user request."
+files = ["AGENTS.md"]

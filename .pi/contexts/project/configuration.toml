@@ -7,8 +7,16 @@ description = "Repository Markdown linting policy and excluded generated or tran
 files = [".markdownlint-cli2.jsonc"]
 
 [task-runner]
-description = "Development tool versions and repeatable repository tasks."
+description = "Development tool versions and repeatable repository tasks, including Go validation."
 files = ["mise.toml"]
+
+[go-module]
+description = "Go module identity and language-version declaration."
+files = ["go.mod"]
+
+[go-quality]
+description = "Go linting and formatting policy."
+files = [".golangci.yml"]
 
 [agent-workflow]
 description = "Tau agent command integrations for repository checks."
