@@ -1,0 +1,15 @@
+[repository-ignore]
+description = "Repository-wide ignored operating-system files."
+files = [".gitignore"]
+
+[markdown-quality]
+description = "Repository Markdown linting policy and excluded generated or transient paths."
+files = [".markdownlint-cli2.jsonc"]
+
+[task-runner]
+description = "Development tool versions and repeatable repository tasks."
+files = ["mise.toml"]
+
+[agent-workflow]
+description = "Tau agent command integrations for repository checks."
+files = [".pi/tau/settings.json"]

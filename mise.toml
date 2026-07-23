@@ -1,0 +1,8 @@
+[tools]
+python = "3.13"
+"npm:markdownlint-cli2" = "0.22.1"
+
+[tasks."check:md"]
+description = "Markdown checks"
+run = "markdownlint-cli2 --fix"
+

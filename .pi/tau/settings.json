@@ -1,0 +1,17 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shanepadgett/tau-agent/refs/heads/main/packages/agent/schemas/tau.schema.json",
+	"extensions": {
+		"silentCommandRunner": {
+			"commands": [
+				{
+					"name": "md-check",
+					"command": "mise run check:md",
+					"details": "Runs Markdown linting and fixes through markdownlint-cli2.",
+					"includeGlobs": [
+						"**/*.md"
+					]
+				}
+			]
+		}
+	}
+}

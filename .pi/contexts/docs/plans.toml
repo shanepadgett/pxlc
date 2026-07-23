@@ -1,0 +1,7 @@
+[initial-slice]
+description = "Current implementation target replacing docs/plans/original.md: semantics and still-image compilation for the first usable PXLC slice."
+files = ["docs/plans/initial-slice.md"]
+
+[roadmap]
+description = "Deferred Phase 2–4 work and future PXLC features moved out of the initial implementation target."
+files = ["docs/plans/roadmap.md"]
