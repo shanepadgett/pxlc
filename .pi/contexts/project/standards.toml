@@ -1,3 +1,11 @@
 [repository-instructions]
-description = "Governing repository instructions for delegated coding work, including the policy that tests require explicit user request."
+description = "Governing repository instructions for delegated coding work, including the policy that tests require explicit user request and links to the Go standards."
 files = ["AGENTS.md"]
+
+[go-coding]
+description = "General Go coding guidance for readable, deterministic, maintainable, and idiomatic code."
+files = ["docs/standards/go-code.md"]
+
+[go-architecture]
+description = "General Go community guidance for module, package, dependency, command, API, state, and concurrency architecture."
+files = ["docs/standards/go-architecture.md"]
