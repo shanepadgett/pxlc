@@ -1,0 +1,3 @@
+[generated-pixel-asset-pipeline]
+description = "Generated pixel-asset pipeline for isolated sprites and sprite sheets: source-sheet review, deterministic per-cell RGB box reduction, magenta chroma-key import, native and nearest-neighbor inspection, immutable provenance manifests, and a Pi extension design brief."
+files = ["docs/asset-generation-pipeline.md"]
